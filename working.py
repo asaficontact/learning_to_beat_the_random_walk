@@ -103,53 +103,158 @@ for i in range(len(list_of_countries_considered)):
 MEX.head()
 
 #Plot returns
-
-def plot_returns():
+def plot_returns(title, type = 'er_return'):
+    %matplotlib qt
     # Make a data frame
-    data = {}
-    for i in range(len(list_of_countries_considered)):
-        data.update({list_of_countries_considered[i]:globals()[list_of_countries_considered[i]]['er_return']})
-    df=pd.DataFrame.from_dict(data)
+    min_value = 10000000
+    max_value = -10000000
+    if type == 'ylds_level':
+        data = {}
+        for i in range(len(list_of_countries_considered)):
+            data.update({list_of_countries_considered[i]:globals()[list_of_countries_considered[i]]['ylds_level']})
+            if min(globals()[list_of_countries_considered[i]]['ylds_level']) < min_value:
+                min_value = min(globals()[list_of_countries_considered[i]]['ylds_level'])
+            if max(globals()[list_of_countries_considered[i]]['ylds_level']) > max_value:
+                max_value = max(globals()[list_of_countries_considered[i]]['ylds_level'])
+        df=pd.DataFrame.from_dict(data)
+
+    elif type == 'ylds_slope':
+        data = {}
+        for i in range(len(list_of_countries_considered)):
+            data.update({list_of_countries_considered[i]:globals()[list_of_countries_considered[i]]['ylds_slope']})
+            if min(globals()[list_of_countries_considered[i]]['ylds_slope']) < min_value:
+                min_value = min(globals()[list_of_countries_considered[i]]['ylds_slope'])
+            if max(globals()[list_of_countries_considered[i]]['ylds_slope']) > max_value:
+                max_value = max(globals()[list_of_countries_considered[i]]['ylds_slope'])
+        df=pd.DataFrame.from_dict(data)
+
+    elif type == 'ylds_curvature':
+        data = {}
+        for i in range(len(list_of_countries_considered)):
+            data.update({list_of_countries_considered[i]:globals()[list_of_countries_considered[i]]['ylds_curvature']})
+            if min(globals()[list_of_countries_considered[i]]['ylds_curvature']) < min_value:
+                min_value = min(globals()[list_of_countries_considered[i]]['ylds_curvature'])
+            if max(globals()[list_of_countries_considered[i]]['ylds_curvature']) > max_value:
+                max_value = max(globals()[list_of_countries_considered[i]]['ylds_curvature'])
+        df=pd.DataFrame.from_dict(data)
+
+    elif type == 'exp_level':
+        data = {}
+        for i in range(len(list_of_countries_considered)):
+            data.update({list_of_countries_considered[i]:globals()[list_of_countries_considered[i]]['exp_level']})
+            if min(globals()[list_of_countries_considered[i]]['exp_level']) < min_value:
+                min_value = min(globals()[list_of_countries_considered[i]]['exp_level'])
+            if max(globals()[list_of_countries_considered[i]]['exp_level']) > max_value:
+                max_value = max(globals()[list_of_countries_considered[i]]['exp_level'])
+        df=pd.DataFrame.from_dict(data)
+
+    elif type == 'exp_slope':
+        data = {}
+        for i in range(len(list_of_countries_considered)):
+            data.update({list_of_countries_considered[i]:globals()[list_of_countries_considered[i]]['exp_slope']})
+            if min(globals()[list_of_countries_considered[i]]['exp_slope']) < min_value:
+                min_value = min(globals()[list_of_countries_considered[i]]['exp_slope'])
+            if max(globals()[list_of_countries_considered[i]]['exp_slope']) > max_value:
+                max_value = max(globals()[list_of_countries_considered[i]]['exp_slope'])
+        df=pd.DataFrame.from_dict(data)
+
+    elif type == 'exp_curvature':
+        data = {}
+        for i in range(len(list_of_countries_considered)):
+            data.update({list_of_countries_considered[i]:globals()[list_of_countries_considered[i]]['exp_curvature']})
+            if min(globals()[list_of_countries_considered[i]]['exp_curvature']) < min_value:
+                min_value = min(globals()[list_of_countries_considered[i]]['exp_curvature'])
+            if max(globals()[list_of_countries_considered[i]]['exp_curvature']) > max_value:
+                max_value = max(globals()[list_of_countries_considered[i]]['exp_curvature'])
+        df=pd.DataFrame.from_dict(data)
+
+    elif type == 'tp_level':
+        data = {}
+        for i in range(len(list_of_countries_considered)):
+            data.update({list_of_countries_considered[i]:globals()[list_of_countries_considered[i]]['tp_level']})
+            if min(globals()[list_of_countries_considered[i]]['tp_level']) < min_value:
+                min_value = min(globals()[list_of_countries_considered[i]]['tp_level'])
+            if max(globals()[list_of_countries_considered[i]]['tp_level']) > max_value:
+                max_value = max(globals()[list_of_countries_considered[i]]['tp_level'])
+        df=pd.DataFrame.from_dict(data)
+
+    elif type == 'tp_slope':
+        data = {}
+        for i in range(len(list_of_countries_considered)):
+            data.update({list_of_countries_considered[i]:globals()[list_of_countries_considered[i]]['tp_slope']})
+            if min(globals()[list_of_countries_considered[i]]['tp_slope']) < min_value:
+                min_value = min(globals()[list_of_countries_considered[i]]['tp_slope'])
+            if max(globals()[list_of_countries_considered[i]]['tp_slope']) > max_value:
+                max_value = max(globals()[list_of_countries_considered[i]]['tp_slope'])
+        df=pd.DataFrame.from_dict(data)
+
+    elif type == 'tp_curvature':
+        data = {}
+        for i in range(len(list_of_countries_considered)):
+            data.update({list_of_countries_considered[i]:globals()[list_of_countries_considered[i]]['tp_curvature']})
+            if min(globals()[list_of_countries_considered[i]]['tp_curvature']) < min_value:
+                min_value = min(globals()[list_of_countries_considered[i]]['tp_curvature'])
+            if max(globals()[list_of_countries_considered[i]]['tp_curvature']) > max_value:
+                max_value = max(globals()[list_of_countries_considered[i]]['tp_curvature'])
+        df=pd.DataFrame.from_dict(data)
+
+    else:
+        data = {}
+        for i in range(len(list_of_countries_considered)):
+            data.update({list_of_countries_considered[i]:globals()[list_of_countries_considered[i]]['er_return']})
+            if min(globals()[list_of_countries_considered[i]]['er_return']) < min_value:
+                min_value = min(globals()[list_of_countries_considered[i]]['er_return'])
+            if max(globals()[list_of_countries_considered[i]]['er_return']) > max_value:
+                max_value = max(globals()[list_of_countries_considered[i]]['er_return'])
+        df=pd.DataFrame.from_dict(data)
+
 
     # Initialize the figure
     plt.style.use('seaborn-darkgrid')
 
     # create a color palette
-    palette = plt.get_cmap('Set1')
-     
+    palette = plt.get_cmap('tab20b')
+
     # multiple line plot
     num=0
+    fig = plt.figure(figsize=(20,18))
     for column in df:
         num+=1
 
         # Find the right spot on the plot
-        plt.subplot(4,5, num)
+        fig.add_subplot(4,5, num)
 
         # plot every groups, but discreet
         for v in df:
             plt.plot(df[v], marker='', color='grey', linewidth=0.6, alpha=0.3)
 
         # Plot the lineplot
-        plt.plot(df[column], marker='', color=palette(num), linewidth=2.4, alpha=0.9, label=column)
+        plt.plot(df[column], marker='', color=palette(num), linewidth=2.0, alpha=0.9, label=column)
 
         # Same limits for everybody!
-        plt.ylim(-30,30)
+        plt.ylim(min_value,max_value)
 
         # Not ticks everywhere
-        if num in range(7) :
+        if num in range(16) :
             plt.tick_params(labelbottom='off')
-        if num not in [1,4,7] :
+        if num not in [1,6,11,16] :
             plt.tick_params(labelleft='off')
 
         # Add title
         plt.title(column, loc='left', fontsize=12, fontweight=0, color=palette(num) )
 
     # general title
-    plt.suptitle("How the 9 students improved\nthese past few days?", fontsize=13, fontweight=0, color='black', style='italic', y=1.02)
+    plt.suptitle(title, fontsize=16, fontweight=0, color='black', style='italic')
 
     # Axis title
     plt.text(0.5, 0.02, 'Time', ha='center', va='center')
     plt.text(0.06, 0.5, 'Note', ha='center', va='center', rotation='vertical')
 
-x = plot_returns()
-x.head()
+
+x = plot_returns("One Month Ahead Foreign Exchange Return", 'ylds_level')
+
+max(C.ylds_level)
+
+
+palette = plt.get_cmap('Set1')
+palette(7)

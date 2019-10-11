@@ -6,3 +6,5 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 from sklearn.decomposition import PCA
 from sklearn.preprocessing import StandardScaler
+import warnings
+warnings.filterwarnings("ignore")
