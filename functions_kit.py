@@ -203,74 +203,7 @@ def calculate_differential(df, US_df, type = 'forex'):
 
 
 
-#################################
-#Plot Country Graphs
-#################################
 
-def plot_returns(title, type = 'er_return', set = 'train'):
-    %matplotlib qt
-    #Find optimal X ticks_to_use
-    dates = list(globals()[set + "_AUS"]['ylds_level'].index)
-    ticks_location = int(len(dates)/4) - 1
-    ticks_to_use = [dates[0], dates[ticks_location], dates[ticks_location*2], dates[ticks_location*3], dates[-1]]
-
-    # Make a data frame
-    min_value = 10000000
-    max_value = -10000000
-    data = {}
-    for i in range(len(list_of_countries_considered)):
-        data.update({list_of_countries_considered[i]:globals()[set + "_" + list_of_countries_considered[i]][type]})
-        if min(globals()[set + "_" + list_of_countries_considered[i]][type]) < min_value:
-            min_value = min(globals()[set + "_" + list_of_countries_considered[i]][type])
-        if max(globals()[set + "_" + list_of_countries_considered[i]][type]) > max_value:
-            max_value = max(globals()[set + "_" + list_of_countries_considered[i]][type])
-    df=pd.DataFrame.from_dict(data)
-
-    # Initialize the figure
-    plt.style.use('seaborn-darkgrid')
-
-    # create a color palette
-    palette = plt.get_cmap('tab20b')
-
-    # multiple line plot
-    num=0
-    fig = plt.figure(figsize=(20,18))
-    for column in df:
-        num+=1
-
-        # Find the right spot on the plot
-        fig.add_subplot(4,5, num)
-
-        # plot every groups, but discreet
-        for v in df:
-            plt.plot(df[v], marker='', color='grey', linewidth=0.6, alpha=0.3)
-
-
-        # Plot the lineplot
-        plt.plot(df[column], marker='', color=palette(num), linewidth=2.0, alpha=0.9, label=column)
-        plt.locator_params(axis = 'x', nticks=10)
-
-        # Same limits for everybody!
-        plt.ylim(min_value,max_value)
-        plt.xticks(ticks_to_use)
-
-        # Not ticks everywhere
-        if num in range(16) :
-            plt.tick_params(labelbottom='off')
-        if num not in [1,6,11,16] :
-            plt.tick_params(labelleft='off')
-
-
-
-        # Add title
-        plt.title(column, loc='left', fontsize=12, fontweight=0, color=palette(num) )
-
-    # general title
-    plt.suptitle(title, fontsize=16, fontweight=0, color='black', style='italic')
-
-    # Axis title
-    plt.text(0.5, 0.02, 'Time', ha='center', va='center')
-    plt.text(0.06, 0.5, 'Note', ha='center', va='center', rotation='vertical')
 
 #########################################
 #Create Buy/Sell column
@@ -301,127 +234,18 @@ def support_vectorClassifier(train_df, test_df):
       {'C': [0.0001,0.001, 0.01, 0.1, 1, 10, 100, 1000], 'gamma': [0.00001,0.0001, 0.001, 0.01, 0.1, 1], 'kernel': ['rbf']},
     ]
     #Fit Data
-    globals()["clf_" + list_of_countries_considered[i]] = GridSearchCV(estimator=SVC(), param_grid=parameter_candidates, n_jobs=-1)
-    globals()["clf_" + list_of_countries_considered[i]].fit(train_features, train_target)
+    clf = GridSearchCV(estimator=SVC(), param_grid=parameter_candidates, n_jobs=-1)
+    clf.fit(train_features, train_target)
     #Organize Results
-    results = {"model": globals()["clf_" + list_of_countries_considered[i]],
-               "C": globals()["clf_" + list_of_countries_considered[i]].best_estimator_.C,
-               "gamma": globals()["clf_" + list_of_countries_considered[i]].best_estimator_.gamma,
-               "kernel": globals()["clf_" + list_of_countries_considered[i]].best_estimator_.kernel,
-               "train_accuracy": accuracy_score(train_target, globals()["clf_" + list_of_countries_considered[i]].predict(train_features)),
-               "test_accuracy": accuracy_score(test_target, globals()["clf_" + list_of_countries_considered[i]].predict(test_features)),
-               "train_F1score": f1_score(train_target, globals()["clf_" + list_of_countries_considered[i]].predict(train_features)),
-               "test_F1score": f1_score(test_target, globals()["clf_" + list_of_countries_considered[i]].predict(test_features))}
+    results = {"model": clf,
+               "C": clf.best_estimator_.C,
+               "gamma": clf.best_estimator_.gamma,
+               "kernel": clf.best_estimator_.kernel,
+               "train_accuracy": accuracy_score(train_target, clf.predict(train_features)),
+               "test_accuracy": accuracy_score(test_target, clf.predict(test_features)),
+               "train_F1score": f1_score(train_target, clf.predict(train_features)),
+               "test_F1score": f1_score(test_target, clf.predict(test_features))}
     return results
-
-
-
-#############################
-#Plot Confusion Matrix
-############################
-
-#Plot individual Confusion Matrix
-def plot_confusion_matrix(y_true, y_pred, classes,
-                          cmap=plt.cm.Blues):
-    """
-    This function prints and plots the confusion matrix.
-    Normalization can be applied by setting `normalize=True`.
-    """
-    title = 'Normalized confusion matrix'
-
-    # Compute confusion matrix
-    cm = confusion_matrix(y_true, y_pred)
-    # Only use the labels that appear in the data
-    #classes = classes[unique_labels(y_true, y_pred)]
-    cm = cm.astype('float') / cm.sum(axis=1)[:, np.newaxis]
-
-    fig, ax = plt.subplots()
-    im = ax.imshow(cm, interpolation='nearest', cmap=cmap)
-    ax.figure.colorbar(im, ax=ax)
-    # We want to show all ticks...
-    ax.set(xticks=np.arange(cm.shape[1]),
-           yticks=np.arange(cm.shape[0]),
-           # ... and label them with the respective list entries
-           xticklabels=classes, yticklabels=classes,
-           title=title,
-           ylabel='True label',
-           xlabel=f'Predicted label\naccuracy = {round(np.trace(cm) / float(np.sum(cm)), 3)}; missclass = {round(1 - (np.trace(cm) / float(np.sum(cm))), 3)}')
-
-    # Get rid of white grid lines
-    plt.grid('off')
-
-    # Rotate the tick labels and set their alignment.
-    plt.setp(ax.get_xticklabels(), rotation=45, ha="right",
-             rotation_mode="anchor")
-
-    # Loop over data dimensions and create text annotations.
-    fmt = '.2f'
-    thresh = cm.max() / 2.
-    for i in range(cm.shape[0]):
-        for j in range(cm.shape[1]):
-            ax.text(j, i, format(cm[i, j], fmt),
-                    ha="center", va="center",
-                    color="white" if cm[i, j] > thresh else "black")
-    fig.tight_layout()
-    return ax
-
-
-#Plot all countries confusion matrices
-def plot_confusionMatrices(set = 'test', type = 'clf'):
-    %matplotlib qt
-    cmap=plt.cm.Blues
-    title = ' Normalized Confusion Matrix'
-    title = set.capitalize() + title
-    axes = []
-
-    #Create a list of axes to be created
-    for i in range(4):
-        for j in range(5):
-            axes.append((i,j))
-
-    fig, axs = plt.subplots(4,5)
-
-
-    #Create and plot confusion matrices
-    if type == 'clf':
-        for i in range(len(list_of_countries_considered)):
-            globals()["cm_" + list_of_countries_considered[i]] = confusion_matrix(globals()[set + "_" + list_of_countries_considered[i]].iloc[:, -1],
-                                  globals()[type + "_" + list_of_countries_considered[i]]['model'].predict(globals()[set + "_" + list_of_countries_considered[i]].iloc[:, 0:9]))
-            globals()["cm_" + list_of_countries_considered[i]] = globals()["cm_" + list_of_countries_considered[i]].astype('float') / globals()["cm_" + list_of_countries_considered[i]].sum(axis=1)[:, np.newaxis]
-            im = axs[axes[i]].imshow(globals()["cm_" + list_of_countries_considered[i]], interpolation='nearest', cmap=cmap)
-            axs[axes[i]].figure.colorbar(im, ax=axs[axes[i]])
-    elif type == 'neural':
-        for i in range(len(list_of_countries_considered)):
-            globals()["cm_" + list_of_countries_considered[i]] = confusion_matrix(globals()[set + "_" + list_of_countries_considered[i]].iloc[:, -1],
-                                [1 if prediction[1] > 0.5 else 0 for prediction in globals()[type + "_" + list_of_countries_considered[i]]['model'].predict(globals()[set + "_" + list_of_countries_considered[i]].iloc[:, 0:9])])
-            globals()["cm_" + list_of_countries_considered[i]] = globals()["cm_" + list_of_countries_considered[i]].astype('float') / globals()["cm_" + list_of_countries_considered[i]].sum(axis=1)[:, np.newaxis]
-            im = axs[axes[i]].imshow(globals()["cm_" + list_of_countries_considered[i]], interpolation='nearest', cmap=cmap)
-            axs[axes[i]].figure.colorbar(im, ax=axs[axes[i]])
-
-
-    #Put values into confusion matrices
-    for h in range(len(list_of_countries_considered)):
-        fmt = '.2f'
-        thresh = globals()["cm_" + list_of_countries_considered[h]].max() / 2.
-        for i in range(globals()["cm_" + list_of_countries_considered[h]].shape[0]):
-            for j in range(globals()["cm_" + list_of_countries_considered[h]].shape[1]):
-                axs[axes[h]].text(j, i, format(globals()["cm_" + list_of_countries_considered[h]][i, j], fmt),
-                        ha="center", va="center",
-                        color="white" if globals()["cm_" + list_of_countries_considered[h]][i, j] > thresh else "black")
-
-    #Label confusion matrices
-    for i in range(len(list_of_countries_considered)):
-        axs[axes[i]].set(xticks=np.arange(globals()["cm_" + list_of_countries_considered[i]].shape[1]),
-               yticks=np.arange(globals()["cm_" + list_of_countries_considered[i]].shape[0]),
-               # ... and label them with the respective list entries
-               xticklabels=['1','0'], yticklabels=['1','0'],
-               title=list_of_countries_considered[i],
-               ylabel='True label',
-               xlabel=f'accuracy = {round(np.trace(globals()["cm_" + list_of_countries_considered[i]]) / float(np.sum(globals()["cm_" + list_of_countries_considered[i]])), 3)}')
-        axs[axes[i]].grid(False)
-
-    plt.suptitle(title, fontsize=16, fontweight=0, color='black', style='italic')
-    fig.tight_layout()
 
 ##################################################
 #Create Neural Network Classifier
@@ -455,7 +279,7 @@ def neural_networkClassifier(train_df, test_df):
 
     train_target = to_categorical(train_target) #First column is for 0 second is for 1
 
-    tag_classifier.fit(train_features, train_target, epochs = 500,
+    tag_classifier.fit(train_features, train_target, epochs = 1000,
                       batch_size = 10000, verbose = 2,
                       callbacks = [early_stop])
 

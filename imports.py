@@ -18,4 +18,5 @@ from keras import Sequential
 from keras.layers import Dense
 from keras.layers import Dropout
 from keras.callbacks import EarlyStopping
+from keras.utils import to_categorical
 from statistics import mean
