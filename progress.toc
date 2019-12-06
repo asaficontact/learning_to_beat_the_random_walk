@@ -1,0 +1,29 @@
+\contentsline {section}{\numberline {1}Currency Portfolios for Carry Trade}{3}% 
+\contentsline {subsection}{\numberline {1.1}Variables of Interest}{3}% 
+\contentsline {subsection}{\numberline {1.2}Portfolio Creation Based on Interest Rate Differential}{4}% 
+\contentsline {subsubsection}{\numberline {1.2.1}Basic Procedure}{4}% 
+\contentsline {subsubsection}{\numberline {1.2.2}Return on Trading for Monthly Basis}{4}% 
+\contentsline {subsubsection}{\numberline {1.2.3}Return on Trading for Half Year(6 months) Basis}{6}% 
+\contentsline {section}{\numberline {2}Predicting the Directional Change in Foreign Exchange Returns}{7}% 
+\contentsline {subsection}{\numberline {2.1}Feature Engineering}{7}% 
+\contentsline {subsubsection}{\numberline {2.1.1}Monthly Exchange Rate Return}{7}% 
+\contentsline {subsubsection}{\numberline {2.1.2}Principal Component Analysis of Yield, Expectation and Term Premium}{9}% 
+\contentsline {subsection}{\numberline {2.2}Support Vector Machine for Buy/Sell Classification}{13}% 
+\contentsline {subsubsection}{\numberline {2.2.1}Setup}{13}% 
+\contentsline {subsection}{\numberline {2.3}Neural Network for Buy/Sell Classification}{14}% 
+\contentsline {subsubsection}{\numberline {2.3.1}Setup}{14}% 
+\contentsline {section}{\numberline {3}Predicting Directional Change in FOREX market with Sentiment Analysis}{17}% 
+\contentsline {subsection}{\numberline {3.1}Variables of Interest}{17}% 
+\contentsline {subsubsection}{\numberline {3.1.1}Macro Variables}{17}% 
+\contentsline {subsubsection}{\numberline {3.1.2}Textual Data}{18}% 
+\contentsline {subsection}{\numberline {3.2}Text Preprocessing}{19}% 
+\contentsline {subsubsection}{\numberline {3.2.1}Text cleaning}{19}% 
+\contentsline {subsubsection}{\numberline {3.2.2}Text to vector conversion}{20}% 
+\contentsline {subsection}{\numberline {3.3}Sorting Text as Per Country}{22}% 
+\contentsline {subsubsection}{\numberline {3.3.1}Process Explanation}{22}% 
+\contentsline {subsubsection}{\numberline {3.3.2}Textual Data Structure}{24}% 
+\contentsline {subsubsection}{\numberline {3.3.3}Effectiveness of news articles distribution}{25}% 
+\contentsline {subsection}{\numberline {3.4}Sentiment Analysis}{27}% 
+\contentsline {subsubsection}{\numberline {3.4.1}Methods for Sentiment Analysis}{28}% 
+\contentsline {subsubsection}{\numberline {3.4.2}Models for Sentiment Analysis}{30}% 
+\contentsline {subsubsection}{\numberline {3.4.3}Results}{32}% 

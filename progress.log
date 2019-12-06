@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  26 OCT 2019 22:46
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  15 NOV 2019 23:37
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -48,6 +48,39 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@float@everytoks=\toks16
 \@floatcapt=\box28
 ) (./progress.aux
+
+LaTeX Warning: Label `simulationfigure' multiply defined.
+
+
+LaTeX Warning: Label `simulationfigure' multiply defined.
+
+
+LaTeX Warning: Label `simulationfigure' multiply defined.
+
+
+LaTeX Warning: Label `simulationfigure' multiply defined.
+
+
+LaTeX Warning: Label `simulationfigure' multiply defined.
+
+
+LaTeX Warning: Label `simulationfigure' multiply defined.
+
+
+LaTeX Warning: Label `simulationfigure' multiply defined.
+
+
+LaTeX Warning: Label `simulationfigure' multiply defined.
+
+
+LaTeX Warning: Label `simulationfigure' multiply defined.
+
+
+LaTeX Warning: Label `simulationfigure' multiply defined.
+
+
+LaTeX Warning: Label `simulationfigure' multiply defined.
+
 
 LaTeX Warning: Label `simulationfigure' multiply defined.
 
@@ -148,218 +181,477 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <8> on input line 10.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 10.
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 27.
- (/usr/local/texlive/2019/texmf-dist/tex/latex/base/omscmr.fd
+ [1
+
+{/usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (./progress.toc
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 2.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 2.
+)
+\tf@toc=\write3
+\openout3 = `progress.toc'.
+
+ [2]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 29.
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 27.
- [1
-
-{/usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-<images/carryTrade/monthly1.png, id=11, 462.528pt x 346.896pt>
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 29.
+ [3]
+<images/carryTrade/monthly1.png, id=18, 462.528pt x 346.896pt>
 File: images/carryTrade/monthly1.png Graphic file (type png)
 <use images/carryTrade/monthly1.png>
-Package pdftex.def Info: images/carryTrade/monthly1.png  used on input line 59.
+Package pdftex.def Info: images/carryTrade/monthly1.png  used on input line 61.
 (pdftex.def)             Requested size: 346.89514pt x 260.17136pt.
 
-Overfull \hbox (1.89514pt too wide) in paragraph at lines 59--60
+Overfull \hbox (1.89514pt too wide) in paragraph at lines 61--62
  [][] 
  []
 
-[2 <./images/carryTrade/monthly1.png>]
-<images/carryTrade/monthly2.png, id=18, 462.528pt x 346.896pt>
+[4 <./images/carryTrade/monthly1.png>]
+<images/carryTrade/monthly2.png, id=24, 462.528pt x 346.896pt>
 File: images/carryTrade/monthly2.png Graphic file (type png)
 <use images/carryTrade/monthly2.png>
-Package pdftex.def Info: images/carryTrade/monthly2.png  used on input line 73.
+Package pdftex.def Info: images/carryTrade/monthly2.png  used on input line 75.
 (pdftex.def)             Requested size: 346.89514pt x 260.17136pt.
 
-Overfull \hbox (1.89514pt too wide) in paragraph at lines 73--74
+Overfull \hbox (1.89514pt too wide) in paragraph at lines 75--76
  [][] 
  []
 
-<images/carryTrade/halfYear1.png, id=19, 462.528pt x 346.896pt>
+<images/carryTrade/halfYear1.png, id=25, 462.528pt x 346.896pt>
 File: images/carryTrade/halfYear1.png Graphic file (type png)
 <use images/carryTrade/halfYear1.png>
-Package pdftex.def Info: images/carryTrade/halfYear1.png  used on input line 92.
+Package pdftex.def Info: images/carryTrade/halfYear1.png  used on input line 94.
 (pdftex.def)             Requested size: 346.89514pt x 260.17136pt.
 
-Overfull \hbox (1.89514pt too wide) in paragraph at lines 92--93
+Overfull \hbox (1.89514pt too wide) in paragraph at lines 94--95
  [][] 
  []
 
-[3 <./images/carryTrade/monthly2.png>]
-Overfull \hbox (36.44524pt too wide) in paragraph at lines 122--124
+[5 <./images/carryTrade/monthly2.png>]
+Overfull \hbox (36.44524pt too wide) in paragraph at lines 124--126
 \OT1/cmr/m/n/10 from the fol-low-ing source: https://www.investopedia.com/articles/forex/12/calculating-
  []
 
-[4 <./images/carryTrade/halfYear1.png>]
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 125.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 125.
-
-./progress.tex:125: Too many }'s.
-l.125 ...\frac{er_t^i - er_{t+1}^i}{er_{t+1}^i}\]}
+[6 <./images/carryTrade/halfYear1.png>]
+./progress.tex:127: Too many }'s.
+l.127 ...\frac{er_t^i - er_{t+1}^i}{er_{t+1}^i}\]}
                                                   
 You've closed more groups than you opened.
 Such booboos are generally harmless, so keep going.
 
 
-./progress.tex:128: LaTeX Error: Bad math environment delimiter.
+./progress.tex:130: LaTeX Error: Bad math environment delimiter.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.128   \item $\[
+l.130   \item $\[
                  er_t\]$ = is current exchange rate of a foreign currency (U...
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-./progress.tex:128: LaTeX Error: Bad math environment delimiter.
+./progress.tex:130: LaTeX Error: Bad math environment delimiter.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.128   \item $\[er_t\]
+l.130   \item $\[er_t\]
                        $ = is current exchange rate of a foreign currency (U...
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-./progress.tex:129: LaTeX Error: Bad math environment delimiter.
+./progress.tex:131: LaTeX Error: Bad math environment delimiter.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.129   \item $\[
+l.131   \item $\[
                  er_{t+1}\]$ = one month ahead exchange rate of a foreign cu...
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-./progress.tex:129: LaTeX Error: Bad math environment delimiter.
+./progress.tex:131: LaTeX Error: Bad math environment delimiter.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.129   \item $\[er_{t+1}\]
+l.131   \item $\[er_{t+1}\]
                            $ = one month ahead exchange rate of a foreign cu...
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-<images/direction/er_return.png, id=28, 1214.136pt x 639.5895pt>
+<images/direction/er_return.png, id=34, 1214.136pt x 639.5895pt>
 File: images/direction/er_return.png Graphic file (type png)
 <use images/direction/er_return.png>
-Package pdftex.def Info: images/direction/er_return.png  used on input line 137.
+Package pdftex.def Info: images/direction/er_return.png  used on input line 139.
 (pdftex.def)             Requested size: 704.19939pt x 370.96216pt.
 
-Overfull \hbox (180.74661pt too wide) in paragraph at lines 136--138
+Overfull \hbox (180.74661pt too wide) in paragraph at lines 138--140
  []|  [] 
  []
 
-[5] [6 <./images/direction/er_return.png>]
-<images/direction/yield_level.png, id=39, 1214.136pt x 639.5895pt>
+[7] [8 <./images/direction/er_return.png>]
+<images/direction/yield_level.png, id=46, 1214.136pt x 639.5895pt>
 File: images/direction/yield_level.png Graphic file (type png)
 <use images/direction/yield_level.png>
-Package pdftex.def Info: images/direction/yield_level.png  used on input line 178.
+Package pdftex.def Info: images/direction/yield_level.png  used on input line 180.
 (pdftex.def)             Requested size: 704.19939pt x 370.96216pt.
 
-Overfull \hbox (180.74661pt too wide) in paragraph at lines 177--179
+Overfull \hbox (180.74661pt too wide) in paragraph at lines 179--181
  []|  [] 
  []
 
-[7]
-<images/direction/yield_slope.png, id=44, 1214.136pt x 639.5895pt>
+[9]
+<images/direction/yield_slope.png, id=50, 1214.136pt x 639.5895pt>
 File: images/direction/yield_slope.png Graphic file (type png)
 <use images/direction/yield_slope.png>
-Package pdftex.def Info: images/direction/yield_slope.png  used on input line 186.
+Package pdftex.def Info: images/direction/yield_slope.png  used on input line 188.
 (pdftex.def)             Requested size: 704.19939pt x 370.96216pt.
 
-Overfull \hbox (180.74661pt too wide) in paragraph at lines 185--187
+Overfull \hbox (180.74661pt too wide) in paragraph at lines 187--189
  []|  [] 
  []
 
-[8 <./images/direction/yield_level.png>]
-<images/direction/yield_curvature.png, id=49, 1214.136pt x 639.5895pt>
+[10 <./images/direction/yield_level.png>]
+<images/direction/yield_curvature.png, id=55, 1214.136pt x 639.5895pt>
 File: images/direction/yield_curvature.png Graphic file (type png)
 <use images/direction/yield_curvature.png>
-Package pdftex.def Info: images/direction/yield_curvature.png  used on input line 194.
+Package pdftex.def Info: images/direction/yield_curvature.png  used on input line 196.
 (pdftex.def)             Requested size: 704.19939pt x 370.96216pt.
 
-Overfull \hbox (180.74661pt too wide) in paragraph at lines 193--195
+Overfull \hbox (180.74661pt too wide) in paragraph at lines 195--197
  []|  [] 
  []
 
-[9 <./images/direction/yield_slope.png>] [10 <./images/direction/yield_curvature.png>]
-<images/direction/clf_cm_train.png, id=58, 1732.4725pt x 933.4875pt>
+[11 <./images/direction/yield_slope.png>] [12 <./images/direction/yield_curvature.png>]
+<images/direction/clf_cm_train.png, id=64, 1732.4725pt x 933.4875pt>
 File: images/direction/clf_cm_train.png Graphic file (type png)
 <use images/direction/clf_cm_train.png>
-Package pdftex.def Info: images/direction/clf_cm_train.png  used on input line 225.
+Package pdftex.def Info: images/direction/clf_cm_train.png  used on input line 227.
 (pdftex.def)             Requested size: 519.74577pt x 280.04842pt.
 
-Overfull \hbox (86.6305pt too wide) in paragraph at lines 224--226
+Overfull \hbox (86.6305pt too wide) in paragraph at lines 226--228
  []|  [] 
  []
 
-<images/direction/clf_cm_test.png, id=59, 1732.4725pt x 933.4875pt>
+<images/direction/clf_cm_test.png, id=65, 1732.4725pt x 933.4875pt>
 File: images/direction/clf_cm_test.png Graphic file (type png)
 <use images/direction/clf_cm_test.png>
-Package pdftex.def Info: images/direction/clf_cm_test.png  used on input line 233.
+Package pdftex.def Info: images/direction/clf_cm_test.png  used on input line 235.
 (pdftex.def)             Requested size: 519.74577pt x 280.04842pt.
 
-Overfull \hbox (86.6305pt too wide) in paragraph at lines 232--234
+Overfull \hbox (86.6305pt too wide) in paragraph at lines 234--236
  []|  [] 
  []
 
-[11 <./images/direction/clf_cm_train.png>] [12 <./images/direction/clf_cm_test.png>]
-<images/direction/n_cm_train.png, id=68, 1732.4725pt x 933.4875pt>
+[13 <./images/direction/clf_cm_train.png>] [14 <./images/direction/clf_cm_test.png>]
+<images/direction/n_cm_train.png, id=75, 1732.4725pt x 933.4875pt>
 File: images/direction/n_cm_train.png Graphic file (type png)
 <use images/direction/n_cm_train.png>
-Package pdftex.def Info: images/direction/n_cm_train.png  used on input line 266.
+Package pdftex.def Info: images/direction/n_cm_train.png  used on input line 268.
 (pdftex.def)             Requested size: 519.74577pt x 280.04842pt.
 
-Overfull \hbox (86.6305pt too wide) in paragraph at lines 265--267
+Overfull \hbox (86.6305pt too wide) in paragraph at lines 267--269
  []|  [] 
  []
 
-<images/direction/n_cm_test.png, id=69, 1732.4725pt x 933.4875pt>
+<images/direction/n_cm_test.png, id=76, 1732.4725pt x 933.4875pt>
 File: images/direction/n_cm_test.png Graphic file (type png)
 <use images/direction/n_cm_test.png>
-Package pdftex.def Info: images/direction/n_cm_test.png  used on input line 274.
+Package pdftex.def Info: images/direction/n_cm_test.png  used on input line 276.
 (pdftex.def)             Requested size: 519.74577pt x 280.04842pt.
 
-Overfull \hbox (86.6305pt too wide) in paragraph at lines 273--275
+Overfull \hbox (86.6305pt too wide) in paragraph at lines 275--277
  []|  [] 
  []
 
-[13 <./images/direction/n_cm_train.png>] [14 <./images/direction/n_cm_test.png>] (./progress.aux)
+[15 <./images/direction/n_cm_train.png>]
+Overfull \hbox (6.18117pt too wide) in paragraph at lines 291--291
+[]\OT1/cmr/bx/n/14.4 Predicting Di-rec-tional Change in FOREX mar-
+ []
+
+[16 <./images/direction/n_cm_test.png>]
+./progress.tex:299: Too many }'s.
+l.299 ...\frac{er_t^i - er_{t-1}^i}{er_{t-1}^i}\]}
+                                                  
+You've closed more groups than you opened.
+Such booboos are generally harmless, so keep going.
+
+
+./progress.tex:302: LaTeX Error: Bad math environment delimiter.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.302   \item $\[
+                 \Delta}er_t^i\]$ represents the change in daily exchange ra...
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+./progress.tex:302: Extra }, or forgotten $.
+l.302   \item $\[\Delta}
+                        er_t^i\]$ represents the change in daily exchange ra...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+
+./progress.tex:302: LaTeX Error: Bad math environment delimiter.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.302   \item $\[\Delta}er_t^i\]
+                                $ represents the change in daily exchange ra...
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+./progress.tex:303: LaTeX Error: Bad math environment delimiter.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.303   \item $\[
+                 er_t^i\]$ represents the exchange rate of a country at time...
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+./progress.tex:303: LaTeX Error: Bad math environment delimiter.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.303   \item $\[er_t^i\]
+                         $ represents the exchange rate of a country at time...
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+./progress.tex:304: LaTeX Error: Bad math environment delimiter.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.304   \item $\[
+                 er_{t-1}^i\]$ represents the historical exchange rate of a ...
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+./progress.tex:304: LaTeX Error: Bad math environment delimiter.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.304   \item $\[er_{t-1}^i\]
+                             $ represents the historical exchange rate of a ...
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+./progress.tex:311: Extra }, or forgotten $.
+l.311 ...\:rate_t - foreign\: interest\: rate_t^i}
+                                                  
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./progress.tex:312: Missing $ inserted.
+<inserted text> 
+                $
+l.312 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./progress.tex:312: Display math should end with $$.
+<to be read again> 
+                   \par 
+l.312 
+      
+The `$' that I just saw supposedly matches a previous `$$'.
+So I shall assume that you typed `$$' both times.
+
+
+./progress.tex:316: LaTeX Error: Bad math environment delimiter.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.316   \item $\[
+                 interest\: rate\: diff_t^i$ represents daily US interest ra...
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+[17]
+<images/sentiment_analysis/news_frequency.png, id=89, 433.62pt x 289.08pt>
+File: images/sentiment_analysis/news_frequency.png Graphic file (type png)
+<use images/sentiment_analysis/news_frequency.png>
+Package pdftex.def Info: images/sentiment_analysis/news_frequency.png  used on input line 333.
+(pdftex.def)             Requested size: 346.89647pt x 231.2643pt.
+
+Overfull \hbox (1.89647pt too wide) in paragraph at lines 333--334
+ [][] 
+ []
+
+[18 <./images/sentiment_analysis/news_frequency.png>] [19]
+./progress.tex:380: Extra }, or forgotten \endgroup.
+l.380 ... of \: words \: in \: the \: document}\]}
+                                                  
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./progress.tex:384: Extra }, or forgotten \endgroup.
+l.384 ...nts \: in \: which \: word \: appears}\]}
+                                                  
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+[20] [21] [22] [23] [24]
+<images/sentiment_analysis/CAN_wordCloud.png, id=114, 401.5pt x 200.75pt>
+File: images/sentiment_analysis/CAN_wordCloud.png Graphic file (type png)
+<use images/sentiment_analysis/CAN_wordCloud.png>
+Package pdftex.def Info: images/sentiment_analysis/CAN_wordCloud.png  used on input line 485.
+(pdftex.def)             Requested size: 232.87015pt x 116.43507pt.
+<images/sentiment_analysis/CHN_wordCloud.png, id=115, 401.5pt x 200.75pt>
+File: images/sentiment_analysis/CHN_wordCloud.png Graphic file (type png)
+<use images/sentiment_analysis/CHN_wordCloud.png>
+Package pdftex.def Info: images/sentiment_analysis/CHN_wordCloud.png  used on input line 493.
+(pdftex.def)             Requested size: 232.87015pt x 116.43507pt.
+ [25 <./images/sentiment_analysis/CAN_wordCloud.png (PNG copy)>]
+<images/sentiment_analysis/JAP_wordCloud.png, id=120, 401.5pt x 200.75pt>
+File: images/sentiment_analysis/JAP_wordCloud.png Graphic file (type png)
+<use images/sentiment_analysis/JAP_wordCloud.png>
+Package pdftex.def Info: images/sentiment_analysis/JAP_wordCloud.png  used on input line 501.
+(pdftex.def)             Requested size: 232.87015pt x 116.43507pt.
+ [26 <./images/sentiment_analysis/CHN_wordCloud.png (PNG copy)> <./images/sentiment_analysis/JAP_wordCloud.png (PNG copy)>] [27]
+<images/sentiment_analysis/automatic_systems.png, id=127, 1084.05pt x 558.085pt>
+File: images/sentiment_analysis/automatic_systems.png Graphic file (type png)
+<use images/sentiment_analysis/automatic_systems.png>
+Package pdftex.def Info: images/sentiment_analysis/automatic_systems.png  used on input line 538.
+(pdftex.def)             Requested size: 325.21751pt x 167.42679pt.
+ [28] [29 <./images/sentiment_analysis/automatic_systems.png (PNG copy)>] [30] [31]
+<images/sentiment_analysis/manual_score.png, id=141, 1214.136pt x 636.6987pt>
+File: images/sentiment_analysis/manual_score.png Graphic file (type png)
+<use images/sentiment_analysis/manual_score.png>
+Package pdftex.def Info: images/sentiment_analysis/manual_score.png  used on input line 578.
+(pdftex.def)             Requested size: 607.06651pt x 318.34857pt.
+
+Overfull \hbox (134.20251pt too wide) in paragraph at lines 577--579
+ []|  [] 
+ []
+
+<images/sentiment_analysis/vader_score.png, id=142, 1214.136pt x 636.6987pt>
+File: images/sentiment_analysis/vader_score.png Graphic file (type png)
+<use images/sentiment_analysis/vader_score.png>
+Package pdftex.def Info: images/sentiment_analysis/vader_score.png  used on input line 587.
+(pdftex.def)             Requested size: 558.50934pt x 292.88495pt.
+
+Overfull \hbox (85.64534pt too wide) in paragraph at lines 586--588
+ []|  [] 
+ []
+
+[32 <./images/sentiment_analysis/manual_score.png>]
+<images/sentiment_analysis/textblob_score.png, id=147, 1214.136pt x 636.6987pt>
+File: images/sentiment_analysis/textblob_score.png Graphic file (type png)
+<use images/sentiment_analysis/textblob_score.png>
+Package pdftex.def Info: images/sentiment_analysis/textblob_score.png  used on input line 596.
+(pdftex.def)             Requested size: 558.50934pt x 292.88495pt.
+
+Overfull \hbox (85.64534pt too wide) in paragraph at lines 595--597
+ []|  [] 
+ []
+
+<images/sentiment_analysis/hiv4_score.png, id=148, 1214.136pt x 636.6987pt>
+File: images/sentiment_analysis/hiv4_score.png Graphic file (type png)
+<use images/sentiment_analysis/hiv4_score.png>
+Package pdftex.def Info: images/sentiment_analysis/hiv4_score.png  used on input line 605.
+(pdftex.def)             Requested size: 558.50934pt x 292.88495pt.
+
+Overfull \hbox (85.64534pt too wide) in paragraph at lines 604--606
+ []|  [] 
+ []
+
+[33 <./images/sentiment_analysis/vader_score.png> <./images/sentiment_analysis/textblob_score.png>]
+<images/sentiment_analysis/lm_score.png, id=154, 1214.136pt x 636.6987pt>
+File: images/sentiment_analysis/lm_score.png Graphic file (type png)
+<use images/sentiment_analysis/lm_score.png>
+Package pdftex.def Info: images/sentiment_analysis/lm_score.png  used on input line 614.
+(pdftex.def)             Requested size: 558.50934pt x 292.88495pt.
+
+Overfull \hbox (85.64534pt too wide) in paragraph at lines 613--615
+ []|  [] 
+ []
+
+<images/sentiment_analysis/aggregate_score.png, id=155, 1214.136pt x 636.6987pt>
+File: images/sentiment_analysis/aggregate_score.png Graphic file (type png)
+<use images/sentiment_analysis/aggregate_score.png>
+Package pdftex.def Info: images/sentiment_analysis/aggregate_score.png  used on input line 622.
+(pdftex.def)             Requested size: 607.06651pt x 318.34857pt.
+
+Overfull \hbox (134.20251pt too wide) in paragraph at lines 621--623
+ []|  [] 
+ []
+
+[34 <./images/sentiment_analysis/hiv4_score.png> <./images/sentiment_analysis/lm_score.png>] [35 <./images/sentiment_analysis/aggregate_score.png>] [36] (./progress.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 1567 strings out of 492616
- 23646 string characters out of 6129482
- 85646 words of memory out of 5000000
- 5476 multiletter control sequences out of 15000+600000
- 7895 words of font info for 28 fonts, out of 8000000 for 9000
+ 1629 strings out of 492616
+ 26002 string characters out of 6129482
+ 90646 words of memory out of 5000000
+ 5522 multiletter control sequences out of 15000+600000
+ 8241 words of font info for 29 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,6n,25p,275b,213s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on progress.pdf (14 pages, 2191915 bytes).
+ 41i,8n,25p,2084b,279s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on progress.pdf (36 pages, 4002755 bytes).
 PDF statistics:
- 109 PDF objects out of 1000 (max. 8388607)
- 61 compressed objects within 1 object stream
+ 205 PDF objects out of 1000 (max. 8388607)
+ 114 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 56 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 111 words of extra memory for PDF output out of 10000 (max. 10000000)
 

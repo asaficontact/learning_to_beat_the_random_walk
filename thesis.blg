@@ -1,0 +1,64 @@
+This is BibTeX, Version 0.99d (TeX Live 2019)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: thesis.aux
+The style file: apacite.bst
+Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
+Reallocated global_strs (elt_size=20001) to 20 items from 10.
+Reallocated glb_str_end (elt_size=4) to 20 items from 10.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Database file #1: sources.bib
+apacite.bst [2013/07/21 v6.03 APA bibliography style]
+Warning--`others' not consistent with 6th ed. of the APA Manual
+Warning--No address in burnside2011carry
+Warning--No address in bussiere2018new
+Warning--No address in lustig2013term
+Warning--No journal in salemspanning
+Warning--No journal in sharpe2017s
+Warning--`others' not consistent with 6th ed. of the APA Manual
+You've used 22 entries,
+            6951 wiz_defined-function locations,
+            1393 strings with 14471 characters,
+and the built_in function-call counts, 42146 in all, are:
+= -- 5227
+> -- 376
+< -- 1973
++ -- 2031
+- -- 49
+* -- 2697
+:= -- 7638
+add.period$ -- 92
+call.type$ -- 22
+change.case$ -- 379
+chr.to.int$ -- 0
+cite$ -- 49
+duplicate$ -- 1135
+empty$ -- 1657
+format.name$ -- 638
+if$ -- 8056
+int.to.chr$ -- 0
+int.to.str$ -- 70
+missing$ -- 0
+newline$ -- 558
+num.names$ -- 176
+pop$ -- 711
+preamble$ -- 1
+purify$ -- 87
+quote$ -- 0
+skip$ -- 2756
+stack$ -- 0
+substring$ -- 2228
+swap$ -- 670
+text.length$ -- 58
+text.prefix$ -- 0
+top$ -- 1
+type$ -- 1888
+warning$ -- 7
+while$ -- 207
+width$ -- 0
+write$ -- 709
+(There were 7 warnings)

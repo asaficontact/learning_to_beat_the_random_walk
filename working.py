@@ -7,16 +7,16 @@ from carryTrader import ct
 #Carry Trade
 ##########################
 
-trade = ct(1000000, 6)
-x, y , z = trade.basic_trade([40,30,30])
+trade = ct(10000, 1)
+x, y , z = trade.basic_trade([50,50])
 
 
 z["average_percentage_profit"]
 z['average_profit']
 
+z['short_country_name_list']
+
 z['long_country_name_list']
-
-
 
 
 %matplotlib qt
@@ -136,6 +136,9 @@ test_ylds_US = PCA_analysis(ylds_US.iloc[training_length:], 'ylds', False)
 test_exp_US = PCA_analysis(exp_US.iloc[training_length:], 'exp', False)
 test_tp_US = PCA_analysis(tp_US.iloc[training_length:], 'tp', False)
 
+ylds_CZR.head()
+
+
 
 # test_ylds_US = ylds_US.iloc[training_length:]
 # test_exp_US = exp_US.iloc[training_length:]
@@ -188,8 +191,13 @@ nlag = 1
 test_US = test_US[:-1*nlag]
 train_US = train_US[:-1*nlag]
 
+train_US.head()
+
 train_US.tail()
 
+test_US.head()
+
+test_US.tail()
 #####################################################
 #Calcuate YLDS, EXP, and TP Differential with US
 ####################################################
@@ -233,7 +241,7 @@ def plot_returns(title, type = 'er_return', set = 'train'):
         num+=1
 
         # Find the right spot on the plot
-        fig.add_subplot(4,5, num)
+        fig.add_subplot(5,4, num)
 
         # plot every groups, but discreet
         for v in df:
@@ -249,9 +257,9 @@ def plot_returns(title, type = 'er_return', set = 'train'):
         plt.xticks(ticks_to_use)
 
         # Not ticks everywhere
-        if num in range(16) :
+        if num in range(17) :
             plt.tick_params(labelbottom='off')
-        if num not in [1,6,11,16] :
+        if num not in [1,5,9,13,17] :
             plt.tick_params(labelleft='off')
 
 
@@ -265,9 +273,12 @@ def plot_returns(title, type = 'er_return', set = 'train'):
     # Axis title
     plt.text(0.5, 0.02, 'Time', ha='center', va='center')
     plt.text(0.06, 0.5, 'Note', ha='center', va='center', rotation='vertical')
+    plt.savefig('images/direction/yield_curvature.png')
 
 
 plot_returns('', 'ylds_curvature')
+
+%matplotlib qt
 
 
 train_CAN.head()
@@ -287,6 +298,9 @@ for i in range(len(list_of_countries_considered)):
 train_buy_distributions
 test_buy_distributions
 
+train_AUS.head()
+
+train_US.head()
 #############################################################
 #Support Vector Classifier with Grid Search for all countries
 ############################################################
