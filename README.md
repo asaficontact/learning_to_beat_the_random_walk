@@ -10,7 +10,7 @@ Finally, in the last chapter, I use sentiment analysis to evaluate the tonality 
 
 Overall, this research finds evidence that machine learning models can more accurately predict directional change in exchange rates than the Random Walk model when the input features used to train the machine learning models are representative of the economic situation of a country. Hence, using macro-economic and financial theory to develop input features that capture the most relevant characteristics of a country’s economy can help us understand short run movements in the foreign exchange markets.
 
-For Full Paper: [CLICK HERE](https://github.com/asaficontact/learning_to_beat_the_random_walk/blob/master/thesis.pdf)
+For Full Paper: [CLICK HERE](https://github.com/asaficontact/learning_to_beat_the_random_walk/blob/master/thesis.pdf) <br/>
 For Sentiment Analysis App: [CLICK HERE](https://asaficontact.shinyapps.io/fx_sentiment/)
 
 ## Understanding the Code Files
