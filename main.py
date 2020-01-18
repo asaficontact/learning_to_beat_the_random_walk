@@ -355,9 +355,26 @@ def plot_confusion_matrix(y_true, y_pred, classes,
         for j in range(cm.shape[1]):
             ax.text(j, i, format(cm[i, j], fmt),
                     ha="center", va="center",
-                    color="white" if cm[i, j] > thresh else "black")
+                    color="orange" if i ==1 and j ==2 else "orange")
     fig.tight_layout()
+    plt.savefig('images/mex_neural.png')
     return ax
+
+#
+test_CZR.head()
+
+clf_CZR.keys()
+neural_MEX.keys()
+plot_confusion_matrix(test_MEX['buy'], x1, ["1","0"])
+
+x = neural_MEX['model'].predict(test_MEX.iloc[:, 0:9])
+x = np.where(x > 0.5, 1, 0)
+x1 = [y[0] for y in x]
+x1
+
+train_MEX['buy']
+
+
 
 
 #Plot all countries confusion matrices
