@@ -12,6 +12,7 @@ Overall, this research finds evidence that machine learning models can more accu
 
 For Full Paper: [CLICK HERE](https://github.com/asaficontact/learning_to_beat_the_random_walk/blob/master/thesis.pdf) <br/>
 For Sentiment Analysis App: [CLICK HERE](https://asaficontact.shinyapps.io/fx_sentiment/)
+For Poster Link: [CLICK HERE](https://www.bates.edu/economics/files/2020/09/thesis_poster-Tawab.pdf)
 
 ## Understanding the Code Files
 * **main.py** contains the code for carry trade portfolio simulation and predicting directional change in exchange rate returns using Principal Component Analysis, Support Vector Machines and Artifical Neural Networks. 
